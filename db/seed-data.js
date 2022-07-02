@@ -18,7 +18,7 @@ function createNewThing() {
 };
 
 Array.from({ length: 5 }).forEach(() => USERS.push(createNewUser()));
-Array.from({ length: 5 }).forEach(() => THINGS.push(createNewThing()));
+Array.from({ length: 50 }).forEach(() => THINGS.push(createNewThing()));
 
 module.exports =  {
     USERS,
