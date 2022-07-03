@@ -1,5 +1,5 @@
 # acme-item-tracker
-Before using running this server: 
+Before running this app: 
   - [Setup postgres locally.](https://www.postgresql.org/download/)
   - [Ensure NodeJS is installed.](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
   - Install dependencies using `npm i`.
