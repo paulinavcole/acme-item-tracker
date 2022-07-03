@@ -5,6 +5,8 @@ import axios from 'axios';
 
 
 const Things = ({ things, users, deleteThing, increaseRating, decreaseRating, updateUser })=> {
+  things.sort((a, b) => (a.ranking < b.ranking) ? 1 : -1)
+
   return (
     <div>
       <h1>Things:</h1>

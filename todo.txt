@@ -1,9 +1,10 @@
+All tasks completed
 - ability to delete a thing -completed
 - ability to create a user -completed
 - ability to delete a user -completed
 - a thing should have ranking which defaults to 1 (display it) - completed
 - add the ability to increase or decrease the ranking of a thing - completed
-- the home page should show the thing(s) with the highest ranking 
+- the home page should show the thing(s) with the highest ranking - completed
 - a thing can belong to a user and a user can have many things. In seed logic have some of the things belong to users. -completed
 - on the things view display the user who owns it (if they have an owner) - completed
   (you don't need an include)
