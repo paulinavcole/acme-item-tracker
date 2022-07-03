@@ -12,11 +12,11 @@ const Home = ({ users, things })=> {
   );
 };
 
-const mapStateToProps = (state)=> {
+const mapSToP = (s)=> {
   return {
-    users: state.users,
-    things: state.things
+    users: s.users,
+    things: s.things
   };
 };
 
-export default connect(mapStateToProps)(Home);
+export default connect(mapSToP)(Home);
