@@ -7,13 +7,15 @@ import axios from 'axios';
 const Things = ({ things, users, deleteThing, increaseRating, decreaseRating, updateUser })=> {
   return (
     <div>
-      <h1>Things</h1>
+      <h1>Things:</h1>
       <ul>
         {
           things.map( thing => {
             return (
               <li key={ thing.id }>
-                { thing.name } *Item Rank: {thing.ranking}
+                <strong>{ thing.name }</strong>
+                <br></br>
+                *Item Rank: {thing.ranking}
                 <button onClick={() => {decreaseRating(thing)}}>-</button>
                 <button onClick={() => {increaseRating(thing)}}>+</button>
                 owned by:

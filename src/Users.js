@@ -7,14 +7,14 @@ import UserForm from './UserFrom';
 const Users = ({ users, things, deleteUser })=> {
   return (
     <div>
-      <h1>Users</h1>
+      <h1>Users:</h1>
       <ul>
         {
           users.map( user => {
             const userThings = things.filter(thing => thing.userId === user.id);
             return (
               <li key={ user.id }>
-                { user.name } {userThings.length > 0 ? 'owns:' : 'owns nothing'}
+                <strong>{ user.name }</strong> {userThings.length > 0 ? 'owns:' : 'owns nothing'}
               <ul>
                 {
                   userThings.map(thing => {
