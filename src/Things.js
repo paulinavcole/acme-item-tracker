@@ -14,8 +14,8 @@ const Things = ({ things, users, deleteThing, increaseRating, decreaseRating })=
             return (
               <li key={ thing.id }>
                 { thing.name } *Item Rank: {thing.ranking}
-                <button onClick={() => {increaseRating(thing)}}>-</button>
-                <button onClick={() => {decreaseRating(thing)}}>+</button>
+                <button onClick={() => {decreaseRating(thing)}}>-</button>
+                <button onClick={() => {increaseRating(thing)}}>+</button>
                 owned by:
                 <select defaultValue={ thing.userId }>
                   {
@@ -27,7 +27,7 @@ const Things = ({ things, users, deleteThing, increaseRating, decreaseRating })=
                   }
 
                 </select>
-                <button onClick={() => {deleteThing(thing)}}>Delete Random Item</button>
+                <button onClick={() => {deleteThing(thing)}}>Delete Item</button>
               </li>
             );
           })
