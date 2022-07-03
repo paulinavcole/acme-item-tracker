@@ -14,7 +14,7 @@ const Users = ({ users, things, deleteUser })=> {
             const userThings = things.filter(thing => thing.userId === user.id);
             return (
               <li key={ user.id }>
-                { user.name } {userThings.length > 0 ? 'owns Things:' : 'owns no Things'}
+                { user.name } {userThings.length > 0 ? 'owns:' : 'owns nothing'}
               <ul>
                 {
                   userThings.map(thing => {

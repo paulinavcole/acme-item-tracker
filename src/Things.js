@@ -28,6 +28,7 @@ const Things = ({ things, users, deleteThing, increaseRating, decreaseRating, up
                   }
 
                 </select>
+                <br></br>
                 <button onClick={() => {deleteThing(thing)}}>Delete Item</button>
               </li>
             );
