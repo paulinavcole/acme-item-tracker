@@ -14,13 +14,16 @@ const Things = ({ things, users, deleteThing, increaseRating, decreaseRating, up
         {
           things.map( thing => {
             return (
+              <div>
               <li key={ thing.id }>
                 <strong>{ thing.name }</strong>
                 <br></br>
                 *Item Rank: {thing.ranking}
+                <br></br>
                 <button onClick={() => {decreaseRating(thing)}}>-</button>
                 <button onClick={() => {increaseRating(thing)}}>+</button>
-                owned by:
+                <br></br>
+                Owned by:
                 <select defaultValue={thing.userId ? thing.userId: ''} onChange={(ev) => updateUser(ev, thing)}>
                   <option value={0}>Item has no owner</option>
                   {
@@ -35,6 +38,8 @@ const Things = ({ things, users, deleteThing, increaseRating, decreaseRating, up
                 <br></br>
                 <button onClick={() => {deleteThing(thing)}}>Delete Item</button>
               </li>
+              <br></br>
+              </div>
             );
           })
         }
